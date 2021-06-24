@@ -8,6 +8,7 @@
 import Combine
 import UIKit
 
+@available(iOS 14, *)
 internal class FloatingViewController: UIViewController {
     class View: UIView, TouchThrowing {}
     private let launchView: LaunchView = .init()

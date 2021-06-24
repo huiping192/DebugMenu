@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 class SliderCell: UICollectionViewListCell {
     var title: String!
     var current: (() -> Double)!
@@ -24,6 +25,7 @@ class SliderCell: UICollectionViewListCell {
     }
 }
 
+@available(iOS 14, *)
 struct SliderCellConfiguration: UIContentConfiguration {
     let title: String
     let current: () -> Double
@@ -37,6 +39,7 @@ struct SliderCellConfiguration: UIContentConfiguration {
     func updated(for state: UIConfigurationState) -> Self { self }
 }
 
+@available(iOS 14, *)
 class SliderCellView: UIView, UIContentView {
     var configuration: UIContentConfiguration
 

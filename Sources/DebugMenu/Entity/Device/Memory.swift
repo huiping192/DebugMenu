@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 class Memory {
     static func usage() -> UInt64 {
         var info = mach_task_basic_info()

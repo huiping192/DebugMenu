@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 
+@available(iOS 14, *)
 public class IntervalComplication: ComplicationPresentable {
     public init(title: String, name: String) {
         self.title = title

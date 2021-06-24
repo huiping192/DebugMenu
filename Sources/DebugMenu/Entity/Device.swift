@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 public class Device {
     public static let current: Device = .init()
 

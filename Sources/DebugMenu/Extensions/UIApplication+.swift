@@ -7,7 +7,7 @@
 
 import UIKit
 
-@available(iOSApplicationExtension, unavailable)
+@available(iOS 14, *)
 extension UIApplication {
     func findKeyWindow() -> UIWindow? {
         (connectedScenes

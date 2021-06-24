@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public protocol ComplicationPresentable {
     var title: String { get }
     func startMonitoring()

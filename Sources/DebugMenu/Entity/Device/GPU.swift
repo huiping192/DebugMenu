@@ -8,6 +8,7 @@
 import Foundation
 import Metal
 
+@available(iOS 14, *)
 class GPU {
     static var current: GPU = .init()
     let device: MTLDevice

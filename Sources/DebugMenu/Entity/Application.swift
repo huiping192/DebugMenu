@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public class Application {
     public static var current: Application = .init()
 
@@ -55,6 +56,7 @@ public class Application {
     }
 }
 
+@available(iOS 14, *)
 extension Application {
     public func getByteCount() throws -> UInt64 {
         let bundlePath = Bundle.main.bundlePath

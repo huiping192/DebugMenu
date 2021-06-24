@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public class MemoryUsageComplication: ComplicationPresentable {
     public init() {}
     public let title: String = "MEM"

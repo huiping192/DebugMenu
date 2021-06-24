@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 struct AnyDebugItem: Hashable, Identifiable, DebugMenuPresentable {
     let id: String
     let debuggerItemTitle: String

@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 public protocol DebugMenuPresentable {
     var debuggerItemTitle: String { get }
     var action: DebugMenuAction { get }

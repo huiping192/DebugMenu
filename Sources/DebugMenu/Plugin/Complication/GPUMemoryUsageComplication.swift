@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public class GPUMemoryUsageComplication: ComplicationPresentable {
     public init() {}
     public let title: String = "GPU MEM"

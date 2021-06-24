@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public struct Envelope {
     public init(key: String, value: String) {
         self.key = key

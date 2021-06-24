@@ -8,6 +8,7 @@
 import Foundation
 import QuartzCore
 
+@available(iOS 14, *)
 public class FPSComplication: ComplicationPresentable {
     public let title: String = "FPS"
     var displayLink: CADisplayLink?

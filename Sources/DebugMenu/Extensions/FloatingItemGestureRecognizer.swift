@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 public class FloatingItemGestureRecognizer: UIPanGestureRecognizer {
     private weak var groundView: UIView?
     private var gestureGap: CGPoint?

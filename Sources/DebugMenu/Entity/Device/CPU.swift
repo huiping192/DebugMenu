@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 class CPU {
     static func usage() -> Double {
         let ids = threadIDs()

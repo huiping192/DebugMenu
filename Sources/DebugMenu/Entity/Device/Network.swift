@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 class Network {
     private static func ifaddrs() -> [String] {
         var addresses = [String]()

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 public extension UITableView {
     func register<T: UITableViewCell>(_ cellClass: T.Type) {
         register(cellClass, forCellReuseIdentifier: NSStringFromClass(cellClass))
@@ -18,6 +19,7 @@ public extension UITableView {
     }
 }
 
+@available(iOS 14, *)
 public extension UICollectionView {
     func register<T: UICollectionViewCell>(_ cellClass: T.Type) {
         register(cellClass, forCellWithReuseIdentifier: String(describing: cellClass))
@@ -45,6 +47,7 @@ public extension UICollectionView {
     }
 }
 
+@available(iOS 14, *)
 public extension UICollectionReusableView {
     static var elementKind: String {
         String(describing: Self.self)

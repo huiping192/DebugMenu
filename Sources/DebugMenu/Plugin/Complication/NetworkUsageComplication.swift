@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 
+@available(iOS 14, *)
 public class NetworkUsageComplication: ComplicationPresentable {
     public init() {}
     public let title: String = "Network"

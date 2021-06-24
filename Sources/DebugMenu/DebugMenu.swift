@@ -1,6 +1,6 @@
 import UIKit
 
-@available(iOSApplicationExtension, unavailable)
+@available(iOS 14, *)
 public struct DebugMenu {
     public static func install(
         windowScene: UIWindowScene? = nil,

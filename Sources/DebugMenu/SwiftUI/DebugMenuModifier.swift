@@ -8,7 +8,9 @@
 import Foundation
 import SwiftUI
 
-@available(iOSApplicationExtension, unavailable)
+
+@available(iOS 14, *)
+
 struct DebugMenuModifier: ViewModifier {
     internal init(
         debuggerItems: [DebugMenuPresentable],
@@ -38,7 +40,8 @@ struct DebugMenuModifier: ViewModifier {
     }
 }
 
-@available(iOSApplicationExtension, unavailable)
+
+@available(iOS 14, *)
 public extension View {
     @ViewBuilder
     func debugMenu(

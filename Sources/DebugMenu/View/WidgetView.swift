@@ -8,6 +8,7 @@
 import Combine
 import UIKit
 
+@available(iOS 14, *)
 class WidgetView: UIVisualEffectView {
     private let tableView: UITableView = .init(frame: .null, style: .plain)
     private var cancellables: Set<AnyCancellable> = []
@@ -68,6 +69,7 @@ class WidgetView: UIVisualEffectView {
     }
 }
 
+@available(iOS 14, *)
 extension WidgetView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         complications.count

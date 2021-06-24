@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public struct NetworkUsage {
     public let wifiDataSent: UInt64
     public let wifiDataReceived: UInt64

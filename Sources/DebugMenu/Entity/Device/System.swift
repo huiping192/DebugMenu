@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 class System {
     static func uptime() -> time_t {
         var boottime = timeval()

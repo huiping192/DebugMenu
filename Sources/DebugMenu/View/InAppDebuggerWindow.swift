@@ -10,7 +10,8 @@ import UIKit
 
 protocol TouchThrowing {}
 
-@available(iOSApplicationExtension, unavailable)
+
+@available(iOS 14, *)
 public class InAppDebuggerWindow: UIWindow {
     internal static var shared: InAppDebuggerWindow!
 

@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 14, *)
 public enum Options {
     case showsWidgetOnLaunch
     case showsRecentItems
