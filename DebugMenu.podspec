@@ -12,6 +12,6 @@ DebugMenu.
   s.social_media_url = 'https://twitter.com/noppefoxwolf'
   s.ios.deployment_target = '13.0'
   s.swift_versions = '5.2'
-  s.frameworks = 'Combine'
+  s.frameworks = ['Combine','UIKit', 'Metal']
   s.source_files = 'Sources/DebugMenu/**/*.{swift,metal}'
 end
