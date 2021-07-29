@@ -331,12 +331,14 @@ extension InAppDebuggerViewController: UICollectionViewDelegate {
         }
     }
 }
+@available(iOS 14, *)
 
 extension InAppDebuggerViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         performUpdate(searchController.searchBar.text)
     }
 }
+@available(iOS 14, *)
 
 open class CollectionViewCell: UICollectionViewCell {
     open override var isHighlighted: Bool {

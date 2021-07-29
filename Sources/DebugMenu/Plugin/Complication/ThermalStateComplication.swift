@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+@available(iOS 14, *)
 
 public class ThermalStateComplication: ComplicationPresentable {
     public init() {}

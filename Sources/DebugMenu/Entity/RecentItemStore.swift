@@ -6,6 +6,7 @@
 //
 
 import Foundation
+@available(iOS 14, *)
 
 struct RecentItemStore {
     let key: String = "dev.noppe.debugmenu.recent-item-names"

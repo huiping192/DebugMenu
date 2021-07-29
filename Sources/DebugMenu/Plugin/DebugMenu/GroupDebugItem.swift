@@ -6,10 +6,12 @@
 //
 
 import Foundation
+@available(iOS 14, *)
 
 protocol HasDebugItems {
     var debugItems: [AnyGroupDebugItem] { get }
 }
+@available(iOS 14, *)
 
 public struct GroupDebugItem: DebugMenuPresentable, HasDebugItems {
     public init(title: String, items: [DebugMenuPresentable]) {
@@ -31,6 +33,7 @@ public struct GroupDebugItem: DebugMenuPresentable, HasDebugItems {
     }
     let debugItems: [AnyGroupDebugItem]
 }
+@available(iOS 14, *)
 
 struct AnyGroupDebugItem: Hashable, Identifiable, DebugMenuPresentable, HasDebugItems {
     let id: String
@@ -57,6 +60,7 @@ struct AnyGroupDebugItem: Hashable, Identifiable, DebugMenuPresentable, HasDebug
         lhs.id == rhs.id
     }
 }
+@available(iOS 14, *)
 
 extension Array where Element == AnyGroupDebugItem {
     func flatten() -> [AnyGroupDebugItem] {
