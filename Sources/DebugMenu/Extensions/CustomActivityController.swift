@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 14, *)
 class CustomActivityViewController: UIActivityViewController {
 
     private let controller: UIViewController

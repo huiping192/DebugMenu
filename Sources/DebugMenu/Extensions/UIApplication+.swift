@@ -7,13 +7,15 @@
 
 import UIKit
 
+@available(iOS 14, *)
 extension UIApplication {
     func findKeyWindow() -> UIWindow? {
         (connectedScenes
-            .filter({$0.activationState == .foregroundActive})
-            .compactMap({$0 as? UIWindowScene})
-            .first?.windows ?? windows)
+            .filter({ $0.activationState == .foregroundActive })
+            .compactMap({ $0 as? UIWindowScene })
+            .first?
+            .windows ?? windows)
             .filter({ !($0 is InAppDebuggerWindow) })
-            .filter({$0.isKeyWindow}).first
+            .filter({ $0.isKeyWindow }).first
     }
 }

@@ -1,14 +1,17 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Tomoya Hirano on 2021/05/23.
 //
 
 import Foundation
-
+@available(iOS 14, *)
 public struct KeyValueDebugItem: DebugMenuPresentable {
-    public init(title: String, fetcher: @escaping (_ completions: @escaping ([Envelope]) -> Void) -> Void) {
+    public init(
+        title: String,
+        fetcher: @escaping (_ completions: @escaping ([Envelope]) -> Void) -> Void
+    ) {
         self.title = title
         self.action = .didSelect(action: { parent, result in
             let vc = EnvelopePreviewTableViewController(fetcher: fetcher)
@@ -16,7 +19,7 @@ public struct KeyValueDebugItem: DebugMenuPresentable {
             result(.success())
         })
     }
-    
+
     let title: String
     public var debuggerItemTitle: String { title }
     public let action: DebugMenuAction

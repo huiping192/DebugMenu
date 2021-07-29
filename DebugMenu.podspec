@@ -10,8 +10,8 @@ DebugMenu.
   s.author           = { 'Tomoya Hirano' => 'noppelabs@gmail.com' }
   s.source           = { :git => 'https://github.com/noppefoxwolf/DebugMenu.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/noppefoxwolf'
-  s.ios.deployment_target = '14.0'
+  s.ios.deployment_target = '13.0'
   s.swift_versions = '5.2'
-  
+  s.frameworks = ['Combine','UIKit', 'Metal']
   s.source_files = 'Sources/DebugMenu/**/*.{swift,metal}'
 end

@@ -1,12 +1,13 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Tomoya Hirano on 2021/05/29.
 //
 
 import Foundation
 
+@available(iOS 14, *)
 public class GPUMemoryUsageComplication: ComplicationPresentable {
     public init() {}
     public let title: String = "GPU MEM"
@@ -22,7 +23,3 @@ public class GPUMemoryUsageComplication: ComplicationPresentable {
         }
     }
 }
-
-
-
-

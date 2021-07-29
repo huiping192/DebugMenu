@@ -43,8 +43,10 @@ struct App: SwiftUI.App {
                     let envelops = UserDefaults.standard.dictionaryRepresentation().map({ Envelope(key: $0.key, value: "\($0.value)") })
                     completions(envelops)
                 }),
-                AppInfoDebugItem(),
-                DeviceInfoDebugItem(),
+                GroupDebugItem(title: "Info", items: [
+                    AppInfoDebugItem(),
+                    DeviceInfoDebugItem(),
+                ]),
             ], complications: [
                 CPUUsageComplication(),
                 CPUGraphComplication(),
@@ -52,9 +54,10 @@ struct App: SwiftUI.App {
                 MemoryUsageComplication(),
                 NetworkUsageComplication(),
                 FPSComplication(),
+                ThermalStateComplication(),
                 CustomComplication(),
                 IntervalComplication(title: "Reduce time", name: "dev.noppe.calc")
-            ], options: [.showWidgetOnLaunch])
+            ], options: [.showsWidgetOnLaunch])
         }
     }
 }
